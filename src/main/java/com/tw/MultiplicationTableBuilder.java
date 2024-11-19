@@ -7,4 +7,7 @@ public class MultiplicationTableBuilder {
     public boolean isStarterNotBiggerThanEnd(int start, int end){
         return false;
     }
+    public boolean isStarterAndEndInRangeOf1To1000 ( int Start, int end){
+        return false;
+    }
 }
