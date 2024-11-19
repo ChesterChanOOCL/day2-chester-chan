@@ -2,6 +2,7 @@ package com.tw;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MultiplicationTableBuilderTest {
@@ -87,5 +88,15 @@ class MultiplicationTableBuilderTest {
         boolean  starterAndEndInRangeOf1To1000 = multiplicationTableBuilder.isStarterAndEndInRangeOf1To1000(2,1001);
         assertTrue(starterAndEndInRangeOf1To1000);
     }
+    @Test
+    void should_return_twoTimesFourEqualsToEight_when_generateExpression_given_start_2_end_4(){
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 2;
+        int end = 4 ;
+        String expectedExpression = "2*4=8";
+        String actualExpression = multiplicationTableBuilder.generateExpression(start ,end);
+        assertEquals(expectedExpression, actualExpression);
+    }
+
 
 }
