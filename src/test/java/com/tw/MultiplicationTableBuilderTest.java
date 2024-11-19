@@ -61,4 +61,13 @@ class MultiplicationTableBuilderTest {
         boolean  starterAndEndInRangeOf1To1000 = multiplicationTableBuilder.isStarterAndEndInRangeOf1To1000(2,3);
         assertTrue(starterAndEndInRangeOf1To1000);
     }
+
+    @Test
+    void should_return_true_when_isStarterAndEndInRangeOf1To1000_given_start_2_end_1(){
+        MultiplicationTableBuilder multiplicationTableBuilder = new MultiplicationTableBuilder();
+        int start = 2;
+        int end =1;
+        boolean  starterAndEndInRangeOf1To1000 = multiplicationTableBuilder.isStarterAndEndInRangeOf1To1000(2,1;
+        assertTrue(starterAndEndInRangeOf1To1000);
+    }
 }
